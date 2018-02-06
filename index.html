@@ -1,53 +1,122 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="favicon.ico">
-        <link rel="icon" type="image/jpeg" href="logo.jpg" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="style.css">
         <title>DevOps Forest Manifesto</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet">
+        <meta name="description" content="Список золотых правил и принципов направления DevOps. Используйте на свою продуктивность.">
+        <meta name="author" content="Nikita Chernyi">
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@rakshazi" />
+        <meta name="twitter:creator" content="@rakshazi" />
+        <link rel="shortcut icon" type="image/jpg" href="https://manifesto.devopsforest.ru/logo.jpg"/>
+        <meta property="og:url" content="https://manifesto.devopsforest.ru/" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="DevOps Forest Manifesto" />
+        <meta property="og:description" content="Список золотых правил и принципов направления DevOps. Используйте на свою продуктивность." />
+        <meta property="og:image" content="https://manifesto.devopsforest.ru/logo.jpg" />
     </head>
-    <body class="text-center">
-        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <header class="masthead">
-                <div class="inner">
-                    <h3 class="masthead-brand">DevOps Forest Manifesto</h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#">Manifesto</a>
-                        <a class="nav-link" href="https://devopsforest.ru">Website</a>
-                        <a class="nav-link" href="https://t.me/devopsforest">Channel</a>
-                    </nav>
-                </div>
-            </header>
-            <main role="main" class="inner cover">
-            <h1 class="cover-heading">Манифест <a href="https://devopsforest.ru" class="btn btn-secondary btn-lg">DevOps Forest</a></h1>
-            <div style="text-align: justify">
-            <p class="lead">Список золотых правил и принципов направления DevOps. Используйте на свою продуктивность. DevOps Forest не несет ответственности за результат, в конце концов у каждого своя голова на плечах.</p>
-            <h2>1. Будь ленивым</h2>
-            <p class="lead">Никогда не не делай одну и ту же работу дважды. Если нужно повторить какие-либо действия, напиши скрипт.</p>
-            <h2>2. Автоматизируй всё</h2>
-            <p class="lead">Даже если что-то нужно сделать всего один раз, будь ленивым и автоматизируй это. Генерация отчетов, разворачивание нового окружения, любые другие действия, как правило, приходится выполнять по несколько раз. Проще написать скрипт</p>
-            <h2>3. Используй инструменты</h2>
-            <p class="lead">Скрипты на Bash - это хорошо. Роли и плейбуки на Ansible - еще лучше. Причина одна - в автоматизации на bash черт ногу сломит, как только проект вырастет из одной виртуалки. Ansible (Chef, Puppet, etc.)  - специализированные инструменты, которые позволяют в простом и понятном виде задокументировать все действия</p>
-            <h2>4. CI/CD - наше всё</h2>
-            <p class="lead">CI/CD позволяет экономить время и нервы для всех. Если хочешь продать это бизнесу - скажи о сокращении затрат на delivery и приведи пару красивых цифр, они это любят</p>
-            <h2>5. Логируй всё</h2>
-            <p class="lead">Буквально всё. Логи могут занимать много места, но они спасут время и нервы команды, если что-то пойдет не так</p>
-            <h2>5.1. Используй инструменты Crash Reporting</h2>
-            <p class="lead"><a href="https://sentry.io" target="_blank">Sentry</a>, Crashlytics спасут время и нервы команды, если что-то пойдет не так (ОЧЕНЬ много времени и нервов). Использовать вместе с п.5</p>
-            <h2>5.2. Используй мониторинг для всего</h2>
-            <p class="lead">Как и предыдущие пункты, экономит время и нервы команды, использовать вместе с п.5 и п.5.1</p>
+    <body>
+        <main>
+        <div class="header-block row">
+            <div class="description-block col l10 push-l2 s12">
+                <span class="flow-text gold-text">Manifesto</span>
+                <span class="flow-text grey-text">
+                    Список золотых правил и принципов направления DevOps.
+                    Используйте на свою продуктивность.
+                    <br>
+                    DevOps Forest не несет ответственности за результат,
+                    в конце концов у каждого своя голова на плечах.
+                </span>
+                <a href="#" class="waves-effect waves-light btn first-btn"><i class="fa fa-chevron-circle-right"></i>Manifesto</a>
+                <a href="http://devopsforest.ru" target="_blank" class="waves-effect waves-light btn first-btn"><i class="fa fa-globe"></i>Website</a>
+                <a href="https://t.me/devopsforest" target="_blank" class="waves-effect waves-light btn tech-stack"><i class="fa fa-telegram"></i>Channel</a>
             </div>
-            </main>
-            <footer class="mastfoot mt-auto">
-                <div class="inner">
-                    <p><a href="https://devopsforest.ru">DevOps Forest</a>, by <a href="http://rakshazi.cf">@rakshazi</a>.</p>
-                </div>
-            </footer>
+
+            <div class="logo-block col l2 pull-l10 s12">
+                <img src="http://tele.ga/i/u_235137328_171392.jpg" alt="">
+            </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <div class="body-block row">
+            <div class="col l10 offset-l2 s12">
+                <div class="feature-item">
+                    <b>1. Будь ленивым</b>
+                    <span class="description">Никогда не делай одну и ту же работу дважды. Если нужно повторить какие-либо действия, напиши скрипт.</span>
+                </div>
+
+                <div class="feature-item">
+                    <b>2. Автоматизируй всё</b>
+                    <span class="description">
+                        Даже если что-то нужно сделать всего один раз,
+                        будь ленивым и автоматизируй это. Генерация отчетов,
+                        разворачивание нового окружения, любые другие действия,
+                        как правило, приходится выполнять по несколько раз. Проще написать скрипт
+                    </span>
+                </div>
+
+                <div class="feature-item">
+                    <b>3. Используй инструменты</b>
+                    <span class="description">Скрипты на Bash - это хорошо. Роли
+                        и плейбуки на Ansible - еще лучше. Причина одна - в автоматизации на bash черт ногу сломит,
+                        как только проект вырастет из одной виртуалки.
+                        Ansible (Chef, Puppet, etc.) - специализированные инструменты,
+                        которые позволяют в простом и понятном виде задокументировать все действия</span>
+                </div>
+
+                <div class="feature-item">
+                    <b>4. CI/CD - наше всё</b>
+                    <span class="description">
+                        CI/CD позволяет экономить время и нервы для всех.
+                        Если хочешь продать это бизнесу - скажи о сокращении затрат на delivery и приведи пару красивых цифр, они это любят</span>
+                </div>
+
+                <div class="feature-item">
+                    <b>5. Логируй всё</b>
+                    <span class="description">Буквально всё. Логи могут занимать много места, но они спасут время и нервы команды, если что-то пойдет не так</span>
+                </div>
+
+                <div class="feature-item">
+                    <b>5.1. Используй инструменты Crash Reporting</b>
+                    <span class="description">Sentry, Crashlytics спасут время и нервы команды, если что-то пойдет не так (ОЧЕНЬ много времени и нервов). Использовать вместе с п.5</span>
+                </div>
+
+                <div class="feature-item">
+                    <b>5.2. Используй мониторинг для всего</b>
+                    <span class="description">Как и предыдущие пункты, экономит время и нервы команды, использовать вместе с п.5 и п.5.1</span>
+                </div>
+                <div class="feature-item">
+                    <b>6. Тесты - это хорошо</b>
+                    <span class="description">"Тестируй, тестируй и еще раз вылизывай код. Тяжело в работе, легко в продакшне. Чти майлстоун, мать вашу."<br />
+                        <a href="https://www.facebook.com/sirboris1" target="_blank">Boris Sirbu</a><br />
+                        Чем больше тестов написано и чем лучше их качество (позитивные + негативные кейсы, etc), тем легче добавлять новые изменения и работать в продакшне, так как если что-то идет не так упадут тесты, а не live.
+                    </span>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="page-footer custom-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <span>
+                        <a href="http://devopsforest.ru">DevOps Forest</a>, by
+                        <a href="http://rakshazi.cf">@rakshazi</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     </body>
 </html>
